@@ -1,125 +1,27 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl" class="dark">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>أبو المنذر | المهارات والبيئات</title>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpeg" href="assets/icon.png">
-    <link rel="stylesheet" href="assets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Tailwind CSS CDN for robust offline/local file:// viewing without build steps -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        darkBg: '#0B0F14',
-                        cardBg: '#101827',
-                        emeraldAccent: '#00D6A3',
-                        blueAccent: '#3B82F6',
-                    }
-                }
-            }
-        }
-    </script>
-
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="المهارات والأدوات التقنية المستخدمة في مشاريع أبو المنذر."><meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>أبو المنذر | المهارات</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><script src="script.js" defer></script>
 </head>
-<body class="bg-[#0B0F14] text-[#F8FAFC] font-['Cairo',sans-serif] selection:bg-[#00D6A3] selection:text-[#0B0F14] overflow-x-hidden">
-    
-    <header class="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-[#0B0F14]/90 border-b border-gray-800/80 shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00D6A3] to-[#3B82F6] p-0.5 flex items-center justify-center shadow-lg shadow-[#00D6A3]/20 group-hover:scale-105 transition-transform">
-                    <img src="assets/icon.png" alt="Logo" class="w-full h-full object-cover rounded-[10px]">
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-[#00D6A3] transition-colors">أبو المنذر</span>
-                    <span class="text-[10px] text-gray-400 font-mono">Dev & Security</span>
-                </div>
-            </a>
-            
-            <nav class="hidden md:flex items-center gap-8 font-medium">
-                <a href="index.html" class="text-sm text-gray-300 hover:text-[#00D6A3] transition-colors">الرئيسية</a>
-<a href="projects.html" class="text-sm text-gray-300 hover:text-[#00D6A3] transition-colors">المشاريع</a>
-<a href="skills.html" class="text-sm text-[#00D6A3] font-bold border-b-2 border-[#00D6A3] pb-1">المهارات والبيئات</a>
-<a href="philosophy.html" class="text-sm text-gray-300 hover:text-[#00D6A3] transition-colors">فلسفة العمل</a>
-<a href="contact.html" class="text-sm text-gray-300 hover:text-[#00D6A3] transition-colors">تواصل معي</a>
-
-            </nav>
-
-            <div class="flex items-center gap-4">
-                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white text-xl p-2 bg-[#101827] border border-gray-800 rounded-xl"><i class="fa-solid fa-bars"></i></button>
-            </div>
-        </div>
-        <!-- Mobile Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-[#101827] border-b border-gray-800 px-6 py-6 space-y-4 shadow-2xl">
-            <a href="index.html" class="block text-sm py-2 text-gray-300 hover:text-[#00D6A3] transition-colors">الرئيسية</a>
-<a href="projects.html" class="block text-sm py-2 text-gray-300 hover:text-[#00D6A3] transition-colors">المشاريع</a>
-<a href="skills.html" class="block text-sm py-2 text-[#00D6A3] font-bold border-b-2 border-[#00D6A3] pb-1">المهارات والبيئات</a>
-<a href="philosophy.html" class="block text-sm py-2 text-gray-300 hover:text-[#00D6A3] transition-colors">فلسفة العمل</a>
-<a href="contact.html" class="block text-sm py-2 text-gray-300 hover:text-[#00D6A3] transition-colors">تواصل معي</a>
-
-        </div>
-    </header>
-    
-
-    <main class="pt-28 pb-20">
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">المهارات وبيئات العمل</h2>
-                <p class="text-gray-400">التقنيات والأطر والبيئات الهندسية الحديثة التي نعتمد عليها في تطوير المشاريع الرقمية المتقدمة.</p>
-            </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-                <div class="p-6 rounded-2xl bg-[#101827] border border-gray-800 text-center space-y-3 hover:border-[#00D6A3]/40 transition-all group">
-                    <i class="fa-brands fa-react text-3xl text-[#3B82F6] group-hover:scale-110 transition-transform"></i>
-                    <h4 class="font-bold text-white text-sm">React</h4>
-                    <p class="text-[11px] text-gray-400 font-mono">Frontend UI</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-[#101827] border border-gray-800 text-center space-y-3 hover:border-[#00D6A3]/40 transition-all group">
-                    <i class="fa-solid fa-code text-3xl text-[#00D6A3] group-hover:scale-110 transition-transform"></i>
-                    <h4 class="font-bold text-white text-sm">TypeScript</h4>
-                    <p class="text-[11px] text-gray-400 font-mono">Type Safety</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-[#101827] border border-gray-800 text-center space-y-3 hover:border-[#00D6A3]/40 transition-all group">
-                    <i class="fa-solid fa-mobile-screen text-3xl text-[#3B82F6] group-hover:scale-110 transition-transform"></i>
-                    <h4 class="font-bold text-white text-sm">Flutter & Dart</h4>
-                    <p class="text-[11px] text-gray-400 font-mono">Cross-Platform</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-[#101827] border border-gray-800 text-center space-y-3 hover:border-[#00D6A3]/40 transition-all group">
-                    <i class="fa-solid fa-shield-halved text-3xl text-[#00D6A3] group-hover:scale-110 transition-transform"></i>
-                    <h4 class="font-bold text-white text-sm">Cybersecurity</h4>
-                    <p class="text-[11px] text-gray-400 font-mono">Defense & Audit</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-[#101827] border border-gray-800 text-center space-y-3 hover:border-[#00D6A3]/40 transition-all group">
-                    <i class="fa-brands fa-node-js text-3xl text-emerald-500 group-hover:scale-110 transition-transform"></i>
-                    <h4 class="font-bold text-white text-sm">Node.js</h4>
-                    <p class="text-[11px] text-gray-400 font-mono">Backend API</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-[#101827] border border-gray-800 text-center space-y-3 hover:border-[#00D6A3]/40 transition-all group">
-                    <i class="fa-solid fa-database text-3xl text-yellow-500 group-hover:scale-110 transition-transform"></i>
-                    <h4 class="font-bold text-white text-sm">Firebase</h4>
-                    <p class="text-[11px] text-gray-400 font-mono">Cloud Services</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    
-    <footer class="border-t border-gray-800/80 bg-[#101827]/40 py-12 text-center text-gray-400 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-            <p>© 2026 أبو المنذر. جميع الحقوق محفوظة.</p>
-            <div class="flex items-center gap-6">
-                <a href="https://github.com/ibnElShrqiya" target="_blank" class="hover:text-[#00D6A3] transition-colors"><i class="fa-brands fa-github text-lg"></i></a>
-                <a href="#" class="hover:text-[#00D6A3] transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
-                <a href="#" class="hover:text-[#00D6A3] transition-colors"><i class="fa-brands fa-twitter text-lg"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/script.js"></script>
-</body>
-</html>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">أ</span><span><strong>أبو المنذر</strong><small>Dev &amp; Security</small></span></a><button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">القائمة ☰</button><nav id="site-nav" class="site-nav"><a href="index.html">الرئيسية</a><a href="projects.html">المشاريع</a><a aria-current="page" href="skills.html">المهارات</a><a href="philosophy.html">فلسفة العمل</a><a href="contact.html">تواصل معي</a></nav></header>
+<main class="container page-main">
+  <div class="section-heading"><p class="eyebrow">TOOLKIT</p><h1>المهارات وبيئات العمل</h1><p>تقنيات وأدوات أستخدمها في بناء المشاريع الرقمية.</p></div>
+  <div class="cards three">
+    <article class="card"><span class="skill-icon">⌘</span><h2>HTML &amp; CSS</h2><p>بناء صفحات ويب منظمة ومتجاوبة.</p></article>
+    <article class="card"><span class="skill-icon">JS</span><h2>JavaScript</h2><p>تفاعلات الواجهة ومنطق المتصفح.</p></article>
+    <article class="card"><span class="skill-icon">TS</span><h2>TypeScript</h2><p>كتابة JavaScript مع أنواع أوضح.</p></article>
+    <article class="card"><span class="skill-icon">R</span><h2>React</h2><p>بناء واجهات مستخدم قائمة على المكونات.</p></article>
+    <article class="card"><span class="skill-icon">F</span><h2>Flutter &amp; Dart</h2><p>تطوير تطبيقات متعددة المنصات.</p></article>
+    <article class="card"><span class="skill-icon">K</span><h2>Kotlin</h2><p>تطوير تطبيقات Android.</p></article>
+    <article class="card"><span class="skill-icon">Py</span><h2>Python</h2><p>الأتمتة والبرمجة وأدوات التعلم.</p></article>
+    <article class="card"><span class="skill-icon">⌁</span><h2>Cybersecurity</h2><p>مراجعة دفاعية وإرشادات تقوية الأنظمة.</p></article>
+    <article class="card"><span class="skill-icon">DB</span><h2>Firebase</h2><p>خدمات خلفية وتخزين للمشاريع المناسبة.</p></article>
+  </div>
+</main>
+<footer class="site-footer"><span>© 2026 أبو المنذر. جميع الحقوق محفوظة.</span><a href="https://github.com/ibnElShrqiya" target="_blank" rel="noopener noreferrer">GitHub ↗</a></footer>
+</body></html>

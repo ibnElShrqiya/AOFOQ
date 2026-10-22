@@ -1,129 +1,27 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl" class="dark">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>أبو المنذر | تواصل معي</title>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpeg" href="assets/icon.png">
-    <link rel="stylesheet" href="assets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Tailwind CSS CDN for robust offline/local file:// viewing without build steps -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        darkBg: '#0B0F14',
-                        cardBg: '#101827',
-                        emeraldAccent: '#00D6A3',
-                        blueAccent: '#3B82F6',
-                    }
-                }
-            }
-        }
-    </script>
-
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تواصل مع أبو المنذر بشأن تطوير الويب والتطبيقات والمشاريع التقنية."><meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>أبو المنذر | تواصل معي</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><script src="script.js" defer></script>
 </head>
-<body class="bg-[#0B0F14] text-[#F8FAFC] font-['Cairo',sans-serif] selection:bg-[#00D6A3] selection:text-[#0B0F14] overflow-x-hidden">
-    
-    <header class="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-[#0B0F14]/90 border-b border-gray-800/80 shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00D6A3] to-[#3B82F6] p-0.5 flex items-center justify-center shadow-lg shadow-[#00D6A3]/20 group-hover:scale-105 transition-transform">
-                    <img src="assets/icon.png" alt="Logo" class="w-full h-full object-cover rounded-[10px]">
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-[#00D6A3] transition-colors">أبو المنذر</span>
-                    <span class="text-[10px] text-gray-400 font-mono">Dev & Security</span>
-                </div>
-            </a>
-            
-            <nav class="hidden md:flex items-center gap-8 font-medium">
-                <a href="index.html" class="text-sm text-gray-300 hover:text-[#00D6A3] transition-colors">الرئيسية</a>
-<a href="projects.html" class="text-sm text-gray-300 hover:text-[#00D6A3] transition-colors">المشاريع</a>
-<a href="skills.html" class="text-sm text-gray-300 hover:text-[#00D6A3] transition-colors">المهارات والبيئات</a>
-<a href="philosophy.html" class="text-sm text-gray-300 hover:text-[#00D6A3] transition-colors">فلسفة العمل</a>
-<a href="contact.html" class="text-sm text-[#00D6A3] font-bold border-b-2 border-[#00D6A3] pb-1">تواصل معي</a>
-
-            </nav>
-
-            <div class="flex items-center gap-4">
-                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white text-xl p-2 bg-[#101827] border border-gray-800 rounded-xl"><i class="fa-solid fa-bars"></i></button>
-            </div>
-        </div>
-        <!-- Mobile Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-[#101827] border-b border-gray-800 px-6 py-6 space-y-4 shadow-2xl">
-            <a href="index.html" class="block text-sm py-2 text-gray-300 hover:text-[#00D6A3] transition-colors">الرئيسية</a>
-<a href="projects.html" class="block text-sm py-2 text-gray-300 hover:text-[#00D6A3] transition-colors">المشاريع</a>
-<a href="skills.html" class="block text-sm py-2 text-gray-300 hover:text-[#00D6A3] transition-colors">المهارات والبيئات</a>
-<a href="philosophy.html" class="block text-sm py-2 text-gray-300 hover:text-[#00D6A3] transition-colors">فلسفة العمل</a>
-<a href="contact.html" class="block text-sm py-2 text-[#00D6A3] font-bold border-b-2 border-[#00D6A3] pb-1">تواصل معي</a>
-
-        </div>
-    </header>
-    
-
-    <main class="pt-28 pb-20">
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <span class="text-xs font-mono text-[#00D6A3] tracking-widest uppercase">Get in Touch</span>
-                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">دعنا نبني مشروعك القادم معاً</h2>
-                    <p class="text-gray-400 text-base">
-                        سواء كنت تبحث عن مطور ويب أو محمول محترف، أو ترغب في استشارة أمنية وتقنية لمشروعك، أنا هنا لتحويل أفكارك إلى واقع رقمي آمن.
-                    </p>
-                    <div class="space-y-4 font-mono text-sm text-gray-300">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-xl bg-[#101827] border border-gray-800 flex items-center justify-center text-[#00D6A3]">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <span>contact@abualmunther.dev</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-xl bg-[#101827] border border-gray-800 flex items-center justify-center text-[#3B82F6]">
-                                <i class="fa-brands fa-github"></i>
-                            </div>
-                            <span>github.com/ibnElShrqiya</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#101827] border border-gray-800 rounded-3xl p-8 shadow-2xl">
-                    <form onsubmit="event.preventDefault(); alert('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.');" class="space-y-6">
-                        <div>
-                            <label class="block text-xs font-mono text-gray-400 mb-2">الاسم الكريم</label>
-                            <input type="text" required class="w-full bg-[#0B0F14] border border-gray-800 rounded-xl px-4 py-3 text-white text-sm focus:border-[#00D6A3] focus:outline-none transition-colors">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-mono text-gray-400 mb-2">البريد الإلكتروني</label>
-                            <input type="email" required class="w-full bg-[#0B0F14] border border-gray-800 rounded-xl px-4 py-3 text-white text-sm focus:border-[#00D6A3] focus:outline-none transition-colors">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-mono text-gray-400 mb-2">الرسالة أو تفاصيل المشروع</label>
-                            <textarea rows="4" required class="w-full bg-[#0B0F14] border border-gray-800 rounded-xl px-4 py-3 text-white text-sm focus:border-[#00D6A3] focus:outline-none transition-colors"></textarea>
-                        </div>
-                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#00D6A3] to-[#3B82F6] text-[#0B0F14] font-bold shadow-lg shadow-[#00D6A3]/20 hover:opacity-95 transition-all">إرسال الرسالة</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    
-    <footer class="border-t border-gray-800/80 bg-[#101827]/40 py-12 text-center text-gray-400 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-            <p>© 2026 أبو المنذر. جميع الحقوق محفوظة.</p>
-            <div class="flex items-center gap-6">
-                <a href="https://github.com/ibnElShrqiya" target="_blank" class="hover:text-[#00D6A3] transition-colors"><i class="fa-brands fa-github text-lg"></i></a>
-                <a href="#" class="hover:text-[#00D6A3] transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
-                <a href="#" class="hover:text-[#00D6A3] transition-colors"><i class="fa-brands fa-twitter text-lg"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/script.js"></script>
-</body>
-</html>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">أ</span><span><strong>أبو المنذر</strong><small>Dev &amp; Security</small></span></a><button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">القائمة ☰</button><nav id="site-nav" class="site-nav"><a href="index.html">الرئيسية</a><a href="projects.html">المشاريع</a><a href="skills.html">المهارات</a><a href="philosophy.html">فلسفة العمل</a><a aria-current="page" href="contact.html">تواصل معي</a></nav></header>
+<main class="container page-main">
+  <div class="section-heading"><p class="eyebrow">GET IN TOUCH</p><h1>دعنا نبني مشروعك القادم</h1><p>للاستفسارات المهنية أو مناقشة فكرة مشروع تقني.</p></div>
+  <section class="contact-layout">
+    <div class="card"><h2>بيانات التواصل</h2><p>البريد الإلكتروني:</p><a class="email-link" href="mailto:contact@abualmunther.dev">contact@abualmunther.dev</a><p class="muted">قد تحتاج إلى إعداد البريد أو تحديثه قبل النشر إذا لم يكن هذا العنوان مفعّلًا.</p><a class="button secondary" href="https://github.com/ibnElShrqiya" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+    <div class="card"><h2>نموذج الرسالة</h2><p class="muted">هذا الموقع ثابت ولا يرسل البيانات إلى خادم. استخدم رابط البريد الإلكتروني أعلاه لإرسال رسالة، ولا تدخل معلومات حساسة في هذا النموذج التجريبي.</p>
+      <form id="contact-form">
+        <label for="name">الاسم</label><input id="name" name="name" type="text" maxlength="100" autocomplete="name" required>
+        <label for="email">البريد الإلكتروني</label><input id="email" name="email" type="email" maxlength="254" autocomplete="email" required>
+        <label for="message">الرسالة</label><textarea id="message" name="message" rows="4" maxlength="2000" required></textarea>
+        <button class="button primary" type="submit">تجهيز الرسالة في البريد</button><p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><span>© 2026 أبو المنذر. جميع الحقوق محفوظة.</span><a href="https://github.com/ibnElShrqiya" target="_blank" rel="noopener noreferrer">GitHub ↗</a></footer>
+</body></html>
