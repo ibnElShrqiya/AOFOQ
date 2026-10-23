@@ -1,23 +1,95 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="مشاريع أبو المنذر في تطوير الويب والتطبيقات والأدوات التقنية.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OFOQ Projects — مشاريع أبو المنذر في تطوير الويب والتطبيقات والأدوات التقنية.">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>أبو المنذر | المشاريع</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><script src="script.js" defer></script>
+  <title>OFOQ | المشاريع</title>
+  <meta name="theme-color" content="#0b111b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="OFOQ">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">أ</span><span><strong>أبو المنذر</strong><small>Dev &amp; Security</small></span></a><button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">القائمة ☰</button><nav id="site-nav" class="site-nav"><a href="index.html">الرئيسية</a><a aria-current="page" href="projects.html">المشاريع</a><a href="skills.html">المهارات</a><a href="philosophy.html">فلسفة العمل</a><a href="contact.html">تواصل معي</a></nav></header>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="avatar">OF</span>
+    <span><strong>OFOQ / أفق</strong><small data-i18n="brand_sub">Dev &amp; Security</small></span>
+  </a>
+  <div class="header-controls">
+    <button id="lang-switch-btn" class="lang-switch" type="button" aria-label="Switch Language">English</button>
+    <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">القائمة ☰</button>
+  </div>
+  <nav id="site-nav" class="site-nav">
+    <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+    <a aria-current="page" href="projects.html" data-i18n="nav_projects">المشاريع</a>
+    <a href="skills.html" data-i18n="nav_skills">المهارات</a>
+    <a href="philosophy.html" data-i18n="nav_philosophy">فلسفة العمل</a>
+    <a href="contact.html" data-i18n="nav_contact">تواصل معي</a>
+  </nav>
+</header>
 <main class="container page-main">
-  <div class="section-heading"><p class="eyebrow">SELECTED WORK</p><h1>مشاريع مختارة</h1><p>نماذج من المشاريع البرمجية والتجارب التقنية.</p></div>
+  <div class="section-heading">
+    <p class="eyebrow" data-i18n="portfolio_eyebrow">SELECTED WORK</p>
+    <h1 data-i18n="portfolio_title">مشاريع مختارة</h1>
+    <p data-i18n="portfolio_desc">نماذج من المشاريع البرمجية والتجارب التقنية التي تم تطويرها بعناية.</p>
+  </div>
   <div class="cards two">
-    <article class="card project-card"><div class="card-top"><span class="pill warning">قيد التطوير</span><span class="muted">Mobile App</span></div><h2>ZAD | زاد</h2><p>تطبيق إسلامي للهواتف الذكية لقراءة القرآن الكريم ومواقيت الصلاة والأذكار، مع توجه نحو العمل دون إنترنت.</p><div class="tags"><span>Flutter</span><span>Dart</span><span>Offline-first</span></div></article>
-    <article class="card project-card"><div class="card-top"><span class="pill">مكتمل / مباشر</span><span class="muted">Web Platform</span></div><h2>DUE FRATELLI — Barber &amp; Style</h2><p>موقع احترافي لمحل حلاقة، بتصميم متجاوب وخدمات ويب.</p><div class="tags"><span>HTML/CSS</span><span>JavaScript</span><span>Firebase</span></div><div class="actions"><a class="button primary" href="https://due-fratelli-barbershop.pages.dev/" target="_blank" rel="noopener noreferrer">معاينة حية ↗</a><a class="button secondary" href="https://github.com/ibnElShrqiya/due-fratelli-barbershop" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
-    <article class="card project-card"><div class="card-top"><span class="pill info">قيد التخطيط</span><span class="muted">Cybersecurity</span></div><h2>CYBERLAB</h2><p>مختبر تعليمي يركز على الأمن السيبراني الدفاعي وأدوات الشبكات والتعلم العملي.</p><div class="tags"><span>Python</span><span>Networking</span><span>Security</span></div></article>
-    <article class="card project-card"><div class="card-top"><span class="pill">أدوات تقنية</span><span class="muted">Desktop Utilities</span></div><h2>Windows Tools</h2><p>أدوات إنتاجية وأتمتة ومساعدات للمطورين على نظام Windows.</p><div class="tags"><span>Automation</span><span>PowerShell</span><span>Win32</span></div></article>
+    <article class="card project-card">
+      <div class="card-top">
+        <span class="pill warning" data-i18n="proj_dev">قيد التطوير</span>
+        <span class="muted">Mobile App</span>
+      </div>
+      <h2>ZAD | زاد</h2>
+      <p data-i18n="zad_desc">تطبيق إسلامي للهواتف الذكية لقراءة القرآن الكريم ومواقيت الصلاة والأذكار، مع توجه نحو العمل دون إنترنت (Offline-first) لتجربة مريحة وسريعة.</p>
+      <div class="tags"><span>Flutter</span><span>Dart</span><span>Offline-first</span></div>
+    </article>
+    <article class="card project-card">
+      <div class="card-top">
+        <span class="pill" data-i18n="proj_live">مكتمل / مباشر</span>
+        <span class="muted">Web Platform</span>
+      </div>
+      <h2>DUE FRATELLI — Barber &amp; Style</h2>
+      <p data-i18n="due_desc">موقع احترافي لمحل حلاقة وعناية، بتصميم متجاوب وخدمات ويب تفاعلية متكاملة.</p>
+      <div class="tags"><span>HTML/CSS</span><span>JavaScript</span><span>Firebase</span></div>
+      <div class="actions">
+        <a class="button primary" href="https://due-fratelli-barbershop.pages.dev/" target="_blank" rel="noopener noreferrer">معاينة حية ↗</a>
+        <a class="button secondary" href="https://github.com/ibnElShrqiya/due-fratelli-barbershop" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </article>
+    <article class="card project-card">
+      <div class="card-top">
+        <span class="pill info" data-i18n="proj_plan">قيد التخطيط</span>
+        <span class="muted">Cybersecurity</span>
+      </div>
+      <h2 data-i18n="cyber_title">CYBERLAB</h2>
+      <p data-i18n="cyber_desc">مختبر تعليمي يركز على الأمن السيبراني الدفاعي وأدوات الشبكات والتعلم العملي لتقوية المهارات الأمنية.</p>
+      <div class="tags"><span>Python</span><span>Networking</span><span>Security</span></div>
+    </article>
+    <article class="card project-card">
+      <div class="card-top">
+        <span class="pill" data-i18n="proj_tool">أدوات تقنية</span>
+        <span class="muted">Desktop Utilities</span>
+      </div>
+      <h2 data-i18n="win_title">Windows Tools</h2>
+      <p data-i18n="win_desc">أدوات إنتاجية وأتمتة ومساعدات للمطورين على نظام Windows لتسهيل المهام اليومية.</p>
+      <div class="tags"><span>Automation</span><span>PowerShell</span><span>Win32</span></div>
+    </article>
   </div>
 </main>
-<footer class="site-footer"><span>© 2026 أبو المنذر. جميع الحقوق محفوظة.</span><a href="https://github.com/ibnElShrqiya" target="_blank" rel="noopener noreferrer">GitHub ↗</a></footer>
-</body></html>
+<footer class="site-footer">
+  <span data-i18n="footer_copy">© 2026 أبو المنذر (OFOQ). جميع الحقوق محفوظة.</span>
+  <a href="https://github.com/ibnElShrqiya" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+</footer>
+</body>
+</html>

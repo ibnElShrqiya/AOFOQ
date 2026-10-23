@@ -3,48 +3,302 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="أبو المنذر — مطور برمجيات وويب ومحمول ومهتم بالأمن السيبراني.">
+  <meta name="description" content="OFOQ (أبو المنذر) — مطور برمجيات وويب ومحمول، ومختص بالأمن السيبراني الدفاعي وحلول الويب التقنية.">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>أبو المنذر | الرئيسية</title>
+  <meta property="og:title" content="OFOQ | تطوير البرمجيات والأمن السيبراني">
+  <meta property="og:description" content="نبني تجارب رقمية مميزة ونطوّر حلولًا تقنية آمنة وعالية الجودة.">
+  <meta property="og:type" content="website">
+  <title>OFOQ | أفق — أبو المنذر</title>
+  <meta name="theme-color" content="#0b111b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="OFOQ">
+  <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="index.html"><span class="brand-mark">أ</span><span><strong>أبو المنذر</strong><small>Dev &amp; Security</small></span></a>
-  <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">القائمة ☰</button>
+  <a class="brand" href="index.html">
+    <span class="avatar">OF</span>
+    <span><strong>OFOQ / أفق</strong><small data-i18n="brand_sub">Dev &amp; Security</small></span>
+  </a>
+  <div class="header-controls">
+    <button id="lang-switch-btn" class="lang-switch" type="button" aria-label="Switch Language">English</button>
+    <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">القائمة ☰</button>
+  </div>
   <nav id="site-nav" class="site-nav">
-    <a aria-current="page" href="index.html">الرئيسية</a><a href="projects.html">المشاريع</a><a href="skills.html">المهارات</a><a href="philosophy.html">فلسفة العمل</a><a href="contact.html">تواصل معي</a>
+    <a aria-current="page" href="index.html" data-i18n="nav_home">الرئيسية</a>
+    <a href="projects.html" data-i18n="nav_projects">المشاريع</a>
+    <a href="skills.html" data-i18n="nav_skills">المهارات</a>
+    <a href="philosophy.html" data-i18n="nav_philosophy">فلسفة العمل</a>
+    <a href="contact.html" data-i18n="nav_contact">تواصل معي</a>
   </nav>
 </header>
 <main>
+  <!-- Hero Section -->
   <section class="hero container">
     <div class="hero-copy">
-      <p class="eyebrow"><span class="status-dot"></span> متاح للمشاريع والعمل الحر</p>
-      <h1>نبني تجارب رقمية مميزة ونطوّر <span class="gradient-text">حلولًا تقنية آمنة.</span></h1>
-      <p class="lead">مطور برمجيات وويب ومحمول، ومهتم بالأمن السيبراني. أركز على بناء تجارب رقمية واضحة وعملية مع الاهتمام بالجودة والأمان.</p>
-      <div class="actions"><a class="button primary" href="projects.html">استكشف أعمالي ←</a><a class="button secondary" href="contact.html">تواصل معي</a></div>
+      <p class="eyebrow"><span class="status-dot"></span> <span data-i18n="status_avail">متاح للمشاريع والعمل الحر</span></p>
+      <h1><span data-i18n="hero_title">نبني تجارب رقمية مميزة ونطوّر</span> <span class="gradient-text" data-i18n="hero_title_gradient">حلولًا تقنية آمنة.</span></h1>
+      <p class="lead" data-i18n="hero_lead">مطور برمجيات وويب ومحمول، ومهتم بالأمن السيبراني الدفاعي. أركز على بناء تجارب رقمية واضحة وعملية مع الاهتمام بالجودة والكود النظيف والأمان المستدام.</p>
+      <div class="actions">
+        <a class="button primary" href="projects.html" data-i18n="btn_explore">استكشف أعمالي ←</a>
+        <a class="button secondary" href="contact.html" data-i18n="btn_contact">تواصل معي مباشرة</a>
+      </div>
     </div>
-    <aside class="profile-card">
-      <div class="profile-head"><span class="avatar">AM</span><div><strong>Abu Al-Munther</strong><small>Software Development</small></div><span class="pill">Portfolio</span></div>
-      <div class="tech-row"><span>Web Development</span><b>HTML · CSS · JavaScript</b></div>
-      <div class="tech-row"><span>Mobile</span><b>Flutter · Dart · Kotlin</b></div>
-      <div class="tech-row"><span>Security</span><b>Defensive Security</b></div>
+    <aside class="profile-card" aria-label="بطاقة التعريف الشخصية">
+      <div class="profile-head">
+        <span class="avatar">OF</span>
+        <div><strong>OFOQ Studio</strong><small>Abu Al-Munther</small></div>
+        <span class="pill" data-i18n="card_portfolio">Portfolio</span>
+      </div>
+      <div class="tech-row"><span data-i18n="tech_web">تطوير الويب</span><b>HTML · CSS · JavaScript · React</b></div>
+      <div class="tech-row"><span data-i18n="tech_mobile">تطبيقات المحمول</span><b>Flutter · Dart · Kotlin</b></div>
+      <div class="tech-row"><span data-i18n="tech_sec">الأمن السيبراني</span><b>Defensive Auditing &amp; Hardening</b></div>
     </aside>
   </section>
-  <section class="container section">
-    <div class="section-heading"><p class="eyebrow">ABOUT</p><h2>تقنية عملية بهوية واضحة</h2><p>أطوّر مشاريع تجمع بين سهولة الاستخدام، التصميم المتجاوب، والاهتمام بالممارسات الأمنية الأساسية.</p></div>
+
+  <!-- About Us Section -->
+  <section class="container section" id="about">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="about_eyebrow">ABOUT US</p>
+      <h2 data-i18n="about_title">تقنية عملية بهوية واضحة</h2>
+      <p data-i18n="about_desc">أطوّر مشاريع تجمع بين سهولة الاستخدام، التصميم المتجاوب، والأخذ بالممارسات الأمنية الأساسية منذ السطر الأول.</p>
+    </div>
     <div class="cards three">
-      <article class="card"><h3>تطوير الويب</h3><p>مواقع سريعة ومتجاوبة وتجربة استخدام واضحة.</p></article>
-      <article class="card"><h3>تطبيقات المحمول</h3><p>تجارب متعددة المنصات مع Flutter وتطوير Android.</p></article>
-      <article class="card"><h3>الأمن السيبراني</h3><p>مراجعة دفاعية للكود والإعدادات وتحسين الأمان.</p></article>
+      <article class="card">
+        <span class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span>
+        <h3 data-i18n="card_web_title">تطوير الويب</h3>
+        <p data-i18n="card_web_desc">مواقع سريعة وخفيفة ومتجاوبة مع كافة الشاشات، مع إعطاء الأولوية لتجربة مستخدم استثنائية دون اعتماديات معقدة.</p>
+      </article>
+      <article class="card">
+        <span class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10 18.5h4"/></svg></span>
+        <h3 data-i18n="card_mob_title">تطبيقات المحمول</h3>
+        <p data-i18n="card_mob_desc">بناء تطبيقات هاتف متعدّدة المنصات باستخدام Flutter وDart، مع تصميم يراعي الأداء السلس وتجربة الاستخدام المريحة.</p>
+      </article>
+      <article class="card">
+        <span class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3 data-i18n="card_sec_title">الأمن السيبراني</h3>
+        <p data-i18n="card_sec_desc">مراجعة دفاعية للكود والإعدادات، وتحسين حماية الأنظمة والبيانات والتحقق من المدخلات للحد من الثغرات.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="container section" id="services">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="services_eyebrow">SERVICES</p>
+      <h2 data-i18n="services_title">الخدمات التقنية الاحترافية</h2>
+      <p data-i18n="services_desc">حلول متكاملة تلبّي احتياجات الأفراد والشركات الناشئة بكفاءة عالية وموثوقية.</p>
+    </div>
+    <div class="cards three">
+      <article class="card">
+        <span class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M2 20h20M9 17l-1 3m7-3 1 3"/></svg></span>
+        <h3 data-i18n="serv1_title">تطوير وتصميم المواقع</h3>
+        <p data-i18n="serv1_desc">تصميم وتطوير مواقع تعريفية، ومنصات ويب تفاعلية مخصصة مع مراعاة سرعة التحميل ومتطلبات SEO.</p>
+      </article>
+      <article class="card">
+        <span class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-13h-7l0-7Z"/></svg></span>
+        <h3 data-i18n="serv2_title">تطبيقات الهواتف الذكية</h3>
+        <p data-i18n="serv2_desc">تطوير تطبيقات أندرويد وiOS هجينة وعالية الأداء باستخدام إطار عمل Flutter مع ربط بالخدمات السحابية.</p>
+      </article>
+      <article class="card">
+        <span class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg></span>
+        <h3 data-i18n="serv3_title">الاستشارات الأمنية والفحص</h3>
+        <p data-i18n="serv3_desc">تقييم الوضع الأمني للمشاريع البرمجية، مراجعة ترويسات الحماية، وتقديم توصيات لتقوية الأنظمة.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="container section" id="why-us">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="why_eyebrow">WHY CHOOSE US</p>
+      <h2 data-i18n="why_title">لماذا تختار العمل معنا؟</h2>
+      <p data-i18n="why_desc">نلتزم بمعايير الجودة والشفافية لبناء شراكات تقنية ناجحة ومستدامة.</p>
+    </div>
+    <div class="cards three">
+      <article class="card">
+        <h3 data-i18n="why1_title">جودة الكود والنظافة</h3>
+        <p data-i18n="why1_desc">كود برمجي منظم وموثق وقابل للصيانة والتطوير المستقبلي دون تعقيد غير مبرر.</p>
+      </article>
+      <article class="card">
+        <h3 data-i18n="why2_title">الأمان في الصدارة</h3>
+        <p data-i18n="why2_desc">وضع حماية البيانات والتحقق من المدخلات في أولويات كل مشروع رقمي.</p>
+      </article>
+      <article class="card">
+        <h3 data-i18n="why3_title">التزام وشفافية</h3>
+        <p data-i18n="why3_desc">وضوح تام في المهل الزمنية ومراحل العمل وما يمكن تحقيقه بدقة دون مبالغة.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="container section" id="workflow">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="workflow_eyebrow">WORKFLOW</p>
+      <h2 data-i18n="workflow_title">مراحل سير العمل</h2>
+      <p data-i18n="workflow_desc">منهجية منظمة تضمن تحويل أفكارك إلى منتج رقمي جاهز وناجح.</p>
+    </div>
+    <div class="cards four">
+      <article class="card workflow-step">
+        <span class="workflow-number">01</span>
+        <h3 data-i18n="wf1_title">التحليل والتخطيط</h3>
+        <p data-i18n="wf1_desc">فهم متطلبات المشروع، تحديد الأهداف بدقة، واختيار التقنيات الأنسب للتنفيذ.</p>
+      </article>
+      <article class="card workflow-step">
+        <span class="workflow-number">02</span>
+        <h3 data-i18n="wf2_title">التصميم والهيكلة</h3>
+        <p data-i18n="wf2_desc">تصميم الواجهات والهيكل البرمجي لضمان تجربة مستخدم سلسة وتجاوب تام.</p>
+      </article>
+      <article class="card workflow-step">
+        <span class="workflow-number">03</span>
+        <h3 data-i18n="wf3_title">التطوير والأمان</h3>
+        <p data-i18n="wf3_desc">كتابة الشيفرات البرمجية، تطبيق معايير الأمان الدفاعي، واختبار الوظائف.</p>
+      </article>
+      <article class="card workflow-step">
+        <span class="workflow-number">04</span>
+        <h3 data-i18n="wf4_title">التسليم والمتابعة</h3>
+        <p data-i18n="wf4_desc">نشر المشروع على بيئة الإنتاج، تقديم وثائق التشغيل، والمتابعة المستمرة.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Portfolio / Featured Projects Preview -->
+  <section class="container section" id="portfolio">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="portfolio_eyebrow">PORTFOLIO</p>
+      <h2 data-i18n="portfolio_title">أبرز المشاريع المنجزة</h2>
+      <p data-i18n="portfolio_desc">نماذج حقيقية لمشاريع برمجية وتطبيقات تم تطويرها بعناية.</p>
+    </div>
+    <div class="cards two">
+      <article class="card project-card">
+        <div class="card-top">
+          <span class="pill warning" data-i18n="proj_dev">قيد التطوير</span>
+          <span class="muted">Mobile App</span>
+        </div>
+        <h2>ZAD | زاد</h2>
+        <p data-i18n="zad_desc">تطبيق إسلامي للهواتف الذكية لقراءة القرآن الكريم ومواقيت الصلاة والأذكار، مع توجه نحو العمل دون إنترنت بكفاءة عالية.</p>
+        <div class="tags"><span>Flutter</span><span>Dart</span><span>Offline-first</span></div>
+      </article>
+      <article class="card project-card">
+        <div class="card-top">
+          <span class="pill" data-i18n="proj_live">مكتمل / مباشر</span>
+          <span class="muted">Web Platform</span>
+        </div>
+        <h2>DUE FRATELLI — Barber &amp; Style</h2>
+        <p data-i18n="due_desc">موقع احترافي لمحل حلاقة وعناية، بتصميم عصري متجاوب وخدمات ويب تفاعلية متكاملة.</p>
+        <div class="tags"><span>HTML/CSS</span><span>JavaScript</span><span>Firebase</span></div>
+        <div class="actions">
+          <a class="button primary" href="https://due-fratelli-barbershop.pages.dev/" target="_blank" rel="noopener noreferrer">معاينة حية ↗</a>
+          <a class="button secondary" href="https://github.com/ibnElShrqiya/due-fratelli-barbershop" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </article>
+    </div>
+    <div style="text-align: center; margin-top: 35px;">
+      <a class="button secondary" href="projects.html" data-i18n="btn_all_projects">عرض كافة المشاريع والمهارات ←</a>
+    </div>
+  </section>
+
+  <!-- Customer Reviews System Section -->
+  <section class="container section" id="reviews">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="reviews_eyebrow">TESTIMONIALS</p>
+      <h2 data-i18n="reviews_title">آراء العملاء والتقييمات</h2>
+      <p data-i18n="reviews_desc">شارك تجربتك؛ التقييمات الحالية تُحفظ محليًا على هذا الجهاز فقط.</p>
+    </div>
+    <div class="reviews-container">
+      <div class="reviews-summary-card">
+        <div>
+          <div class="rating-big" id="avg-rating">5.0</div>
+          <div class="stars-display" id="avg-stars">★★★★★</div>
+          <div class="muted" id="total-reviews" style="margin-top: 6px;">بناءً على التقييمات المعتمدة</div>
+        </div>
+        <div>
+          <a class="button primary" href="#review-form-anchor" data-i18n="add_review_btn">أضف تقييمك الآن</a>
+        </div>
+      </div>
+
+      <div class="reviews-grid" id="reviews-list"></div>
+      <p class="muted reviews-note">ملاحظة: هذا الموقع ثابت حاليًا؛ التقييمات لا تُرسل إلى خادم ولا تظهر للزوار الآخرين إلا بعد ربط نظام خلفي.</p>
+
+      <div class="review-form-card" id="review-form-anchor">
+        <h3 data-i18n="review_form_title">شاركنا رأيك أو تقييمك</h3>
+        <p class="muted" data-i18n="review_form_sub">نرحب دائماً بملاحظاتكم لتطوير جودة الخدمات والمشاريع.</p>
+        <form id="review-form">
+          <label for="reviewer-name" data-i18n="rev_name_lbl">الاسم الكريم</label>
+          <input id="reviewer-name" name="name" type="text" maxlength="80" autocomplete="name" required placeholder="أدخل اسمك أو صفتك" data-i18n-placeholder="rev_name_ph">
+          
+          <label data-i18n="rev_stars_lbl">التقييم بالنجوم</label>
+          <div class="star-rating-input" id="star-rating-input">
+            <span class="active">★</span>
+            <span class="active">★</span>
+            <span class="active">★</span>
+            <span class="active">★</span>
+            <span class="active">★</span>
+          </div>
+
+          <label for="reviewer-comment" data-i18n="rev_comment_lbl">تعليقك أو تجربتك</label>
+          <textarea id="reviewer-comment" name="comment" rows="3" maxlength="500" required placeholder="اكتب انطباعك أو ملاحظتك عن الخدمة..." data-i18n-placeholder="rev_comment_ph"></textarea>
+
+          <button class="button primary" type="submit" data-i18n="rev_submit">إرسال التقييم</button>
+          <p id="review-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section class="container section" id="faqs">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="faqs_eyebrow">FAQs</p>
+      <h2 data-i18n="faqs_title">الأسئلة الشائعة</h2>
+      <p data-i18n="faqs_desc">إجابات واضحة حول آلية العمل، الخدمات، والتعاون التقني.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary data-i18n="faq1_q">كيف يمكنني بدء مشروع جديد معك؟</summary>
+        <p data-i18n="faq1_a">يمكنك التواصل معي عبر نموذج الاتصال أو البريد الإلكتروني المباشر مع توضيح فكرة المشروع ومتطلباته الأساسية، وسأقوم بالرد خلال أسرع وقت لمناقشة التفاصيل.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq2_q">ما هي التقنيات الأساسية التي تعتمد عليها؟</summary>
+        <p data-i18n="faq2_a">أعتمد على تقنيات الويب القياسية (HTML, CSS, JavaScript, React) لتطوير المواقع، وإطار عمل Flutter لتطوير تطبيقات الهواتف الذكية، مع التركيز على الأمان والكود النظيف.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq3_q">هل تقدم الدعم الفني بعد تسليم المشروع؟</summary>
+        <p data-i18n="faq3_a">نعم، أقدم الدعم الفني والمتابعة لضمان استقرار العمل، بالإضافة إلى تقديم وثائق تشغيل واضحة لكل مشروع.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq4_q">كيف يتم ضمان أمان المشاريع البرمجية؟</summary>
+        <p data-i18n="faq4_a">أطبق مبادئ الأمان الدفاعي منذ مراحل البناء الأولى، مثل التحقق الصارم من المدخلات، استخدام ترويسات أمان HTTP، وتجنب الاعتماديات غير الضرورية.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contact CTA Section -->
+  <section class="container section" style="text-align: center;">
+    <div class="card" style="max-width: 800px; margin: 0 auto; padding: 45px;">
+      <h2 data-i18n="cta_title">جاهز لبدء مشروعك التقني القادم؟</h2>
+      <p class="lead" style="margin-inline: auto;" data-i18n="cta_lead">دعنا نناقش فكرتك ونحولها إلى واقع برمجي آمن ومميز.</p>
+      <div class="actions" style="justify-content: center;">
+        <a class="button primary" href="contact.html" data-i18n="cta_btn1">تواصل معي الآن</a>
+        <a class="button secondary" href="https://github.com/ibnElShrqiya" target="_blank" rel="noopener noreferrer" data-i18n="cta_btn2">حسابي على GitHub ↗</a>
+      </div>
     </div>
   </section>
 </main>
-<footer class="site-footer"><span>© 2026 أبو المنذر. جميع الحقوق محفوظة.</span><a href="https://github.com/ibnElShrqiya" target="_blank" rel="noopener noreferrer">GitHub ↗</a></footer>
+<footer class="site-footer">
+  <span data-i18n="footer_copy">© 2026 أبو المنذر (OFOQ). جميع الحقوق محفوظة.</span>
+  <div class="footer-links">
+    <a href="https://github.com/ibnElShrqiya" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </div>
+</footer>
 </body>
 </html>

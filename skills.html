@@ -1,27 +1,64 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="المهارات والأدوات التقنية المستخدمة في مشاريع أبو المنذر."><meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>أبو المنذر | المهارات</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OFOQ Skills — المهارات والأدوات التقنية المستخدمة في مشاريع أبو المنذر.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>OFOQ | المهارات</title>
+  <meta name="theme-color" content="#0b111b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="OFOQ">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">أ</span><span><strong>أبو المنذر</strong><small>Dev &amp; Security</small></span></a><button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">القائمة ☰</button><nav id="site-nav" class="site-nav"><a href="index.html">الرئيسية</a><a href="projects.html">المشاريع</a><a aria-current="page" href="skills.html">المهارات</a><a href="philosophy.html">فلسفة العمل</a><a href="contact.html">تواصل معي</a></nav></header>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="avatar">OF</span>
+    <span><strong>OFOQ / أفق</strong><small data-i18n="brand_sub">Dev &amp; Security</small></span>
+  </a>
+  <div class="header-controls">
+    <button id="lang-switch-btn" class="lang-switch" type="button" aria-label="Switch Language">English</button>
+    <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">القائمة ☰</button>
+  </div>
+  <nav id="site-nav" class="site-nav">
+    <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+    <a href="projects.html" data-i18n="nav_projects">المشاريع</a>
+    <a aria-current="page" href="skills.html" data-i18n="nav_skills">المهارات</a>
+    <a href="philosophy.html" data-i18n="nav_philosophy">فلسفة العمل</a>
+    <a href="contact.html" data-i18n="nav_contact">تواصل معي</a>
+  </nav>
+</header>
 <main class="container page-main">
-  <div class="section-heading"><p class="eyebrow">TOOLKIT</p><h1>المهارات وبيئات العمل</h1><p>تقنيات وأدوات أستخدمها في بناء المشاريع الرقمية.</p></div>
+  <div class="section-heading">
+    <p class="eyebrow">TOOLKIT</p>
+    <h1 data-i18n="skills_title">المهارات وبيئات العمل</h1>
+    <p data-i18n="skills_sub">تقنيات وأدوات احترافية أستخدمها في بناء المشاريع والحلول الرقمية.</p>
+  </div>
   <div class="cards three">
-    <article class="card"><span class="skill-icon">⌘</span><h2>HTML &amp; CSS</h2><p>بناء صفحات ويب منظمة ومتجاوبة.</p></article>
-    <article class="card"><span class="skill-icon">JS</span><h2>JavaScript</h2><p>تفاعلات الواجهة ومنطق المتصفح.</p></article>
-    <article class="card"><span class="skill-icon">TS</span><h2>TypeScript</h2><p>كتابة JavaScript مع أنواع أوضح.</p></article>
-    <article class="card"><span class="skill-icon">R</span><h2>React</h2><p>بناء واجهات مستخدم قائمة على المكونات.</p></article>
-    <article class="card"><span class="skill-icon">F</span><h2>Flutter &amp; Dart</h2><p>تطوير تطبيقات متعددة المنصات.</p></article>
-    <article class="card"><span class="skill-icon">K</span><h2>Kotlin</h2><p>تطوير تطبيقات Android.</p></article>
-    <article class="card"><span class="skill-icon">Py</span><h2>Python</h2><p>الأتمتة والبرمجة وأدوات التعلم.</p></article>
-    <article class="card"><span class="skill-icon">⌁</span><h2>Cybersecurity</h2><p>مراجعة دفاعية وإرشادات تقوية الأنظمة.</p></article>
-    <article class="card"><span class="skill-icon">DB</span><h2>Firebase</h2><p>خدمات خلفية وتخزين للمشاريع المناسبة.</p></article>
+    <article class="card"><span class="skill-icon">⌘</span><h2>HTML &amp; CSS</h2><p>بناء صفحات ويب منظمة، دلالية، ومتجاوبة مع كافة الأجهزة.</p></article>
+    <article class="card"><span class="skill-icon">JS</span><h2>JavaScript</h2><p>تفاعلات الواجهة، المعالجة غير المتزامنة، ومنطق المتصفح الحديث.</p></article>
+    <article class="card"><span class="skill-icon">TS</span><h2>TypeScript</h2><p>كتابة JavaScript مع أنواع واضحة وموثوقية أعلى في المشاريع الكبيرة.</p></article>
+    <article class="card"><span class="skill-icon">R</span><h2>React</h2><p>بناء واجهات مستخدم تفاعلية قائمة على المكونات بكفاءة عالية.</p></article>
+    <article class="card"><span class="skill-icon">F</span><h2>Flutter &amp; Dart</h2><p>تطوير تطبيقات محمول متعددة المنصات (Android &amp; iOS) بكود موحد.</p></article>
+    <article class="card"><span class="skill-icon">K</span><h2>Kotlin</h2><p>تطوير تطبيقات Android الأصلية والتعامل مع مكونات النظام.</p></article>
+    <article class="card"><span class="skill-icon">Py</span><h2>Python</h2><p>الأتمتة، البرمجة البرمجية، ومعالجة البيانات وأدوات المساعدة.</p></article>
+    <article class="card"><span class="skill-icon">⌁</span><h2>Cybersecurity</h2><p>مراجعة دفاعية، تأمين ترويسات HTTP، وإرشادات تقوية الأنظمة.</p></article>
+    <article class="card"><span class="skill-icon">DB</span><h2>Firebase</h2><p>خدمات خلفية، مصادقة، وتخزين سحابي للمشاريع السريعة.</p></article>
   </div>
 </main>
-<footer class="site-footer"><span>© 2026 أبو المنذر. جميع الحقوق محفوظة.</span><a href="https://github.com/ibnElShrqiya" target="_blank" rel="noopener noreferrer">GitHub ↗</a></footer>
-</body></html>
+<footer class="site-footer">
+  <span data-i18n="footer_copy">© 2026 أبو المنذر (OFOQ). جميع الحقوق محفوظة.</span>
+  <a href="https://github.com/ibnElShrqiya" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+</footer>
+</body>
+</html>
